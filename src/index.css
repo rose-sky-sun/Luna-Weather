@@ -1,3 +1,12 @@
 body {
     background-color: rgb(221, 237, 249);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#current-city {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.weather-span {
+    color: red;
+    font-weight: 700;
 }
