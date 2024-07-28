@@ -1,7 +1,23 @@
 body {
+    margin: 5px;
+    padding: 0;
     background-color: rgb(221, 237, 249);
     font-family: Arial, Helvetica, sans-serif;
+
 }
+
+header {
+    margin-top: 1rem;
+}
+header > form {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+main {
+    display: flex;
+}
+
 
 #current-city {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -9,4 +25,18 @@ body {
 .weather-span {
     color: red;
     font-weight: 700;
+}
+
+.temp-container {
+   background-color: rgb(255, 200, 200);
+}
+
+.temp-emoji {
+    font-size: 40px;
+}
+.temp-value {
+    font-size: 60px;
+}
+.temp-unit {
+    font-size: 20px;
 }
