@@ -1,42 +1,77 @@
 body {
-    margin: 5px;
+    margin: 0;
     padding: 0;
     background-color: rgb(221, 237, 249);
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 header {
     margin-top: 1rem;
+    width: 100%;
 }
-header > form {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+.logo-div {
+
+}
+.logo {
+    width: 485;
+    height: 5rem;
+    display: block;
+    margin: auto;
+}
+.form-container {
+    display: flex;
+    align-items: center;
+}
+.form-container > form {
+    margin: auto;
+    padding: 1.5rem;
+}
+#search-bar {
+   padding: 5px;
+   width: 18rem;
+   margin-right: 5px;
+}
+#search-button {
+    padding: 5px;
+    width: 8rem;
 }
 
 main {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background-color: rgb(182, 220, 245);
+    margin: auto;
 }
-
 
 #current-city {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+}
+#current-weather {
+    line-height: 1.5;
 }
 .weather-span {
     color: red;
     font-weight: 700;
 }
 
-.temp-container {
-   background-color: rgb(255, 200, 200);
-}
-
 .temp-emoji {
-    font-size: 40px;
+    font-size: 35px;
 }
 .temp-value {
     font-size: 60px;
+    font-weight: 700;
 }
 .temp-unit {
     font-size: 20px;
+    position: relative;
+    bottom: 25px;
+    font-weight: 600;
+}
+footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    line-height: 1.5;
 }

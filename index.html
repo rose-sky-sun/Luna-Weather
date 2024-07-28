@@ -7,34 +7,39 @@
     <title>Luna Weather</title>
 </head>
 <body>
-    <header>
-        <img src="./images/luna-weather-logo2.png" width="485px">
-        <form>
-            <input type="search" placeholder="Enter a city.." required>
-            <input type="submit" value="Search">
-        </form>
-    </header>
-
-    <main>
-        <div class="weather-container">
-            <h1 id="current-city">Tokyo</h1>
-            <p id="current-weather">
-            Tuesday 20:49, scattered clouds
-            <br>
-            Humidity: <span class="weather-span">66%</span>, Wind: <span class="weather-span">3.13km/h</span>
-             </p>
-        </div>
-        <div class="temp-container">
-            <p id="current-temp">
-                <span class="temp-emoji">⛅</span> <span class="temp-value">12</span><span class="temp-unit">°C</span>
-            </p>
-        </div>
-    </main>
-
-    <footer>This project is coded with 🩷 by 
-        <a href="https://github.com/rose-sky-sun" target="_blank">LunaFreya Dragonborn</a> is
-        <a href="https://github.com/rose-sky-sun/Luna-Weather" target="_blank"> open-sourced on GitHub</a> and
-        <a href="https://luna-weather-app.netlify.app/" target="_blank"> hosted on Netlify</a>
-    </footer>
+        <header>
+            <div class="logo-div">
+                <img  class="logo" src="./images/luna-weather-logo2.png">
+            </div>
+            <div class="form-container">
+                <form>
+                    <input id="search-bar" type="search" placeholder="Enter a city.." required>
+                    <input id="search-button" type="submit" value="Search">
+                </form>
+            </div>
+            
+        </header>
+    
+        <main>
+            <div class="weather-container">
+                <h1 id="current-city">Tokyo</h1>
+                <p id="current-weather">
+                Tuesday 20:49, scattered clouds
+                <br>
+                Humidity: <span class="weather-span">66%</span>, Wind: <span class="weather-span">3.13km/h</span>
+                 </p>
+            </div>
+            <div class="temp-container">
+                <p id="current-temp">
+                    <span class="temp-emoji">⛅</span> <span class="temp-value">12</span><span class="temp-unit">°C</span>
+                </p>
+            </div>
+        </main>
+    
+        <footer>This project is coded with 🩷 by 
+            <a href="https://github.com/rose-sky-sun" target="_blank">LunaFreya Dragonborn</a> is
+            <a href="https://github.com/rose-sky-sun/Luna-Weather" target="_blank"> open-sourced on GitHub</a> and
+            <a href="https://luna-weather-app.netlify.app/" target="_blank"> hosted on Netlify</a>
+        </footer>
 </body>
 </html>
