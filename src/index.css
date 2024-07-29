@@ -9,11 +9,8 @@ header {
     margin-top: 1rem;
     width: 100%;
 }
-.logo-div {
-
-}
 .logo {
-    width: 485;
+    width: 400px;
     height: 5rem;
     display: block;
     margin: auto;
