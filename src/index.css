@@ -3,7 +3,6 @@ body {
     padding: 0;
     background-color: rgb(221, 237, 249);
     font-family: Arial, Helvetica, sans-serif;
-    width: 95%;
 }
 
 header {
@@ -11,8 +10,8 @@ header {
     width: 100%;
 }
 .logo {
-    width: 400px;
-    height: 5rem;
+    width: 380px;
+    height: 4rem;
     display: block;
     margin: auto;
 }
@@ -25,13 +24,17 @@ header {
     padding: 1.5rem;
 }
 #search-bar {
-   padding: 5px;
-   width: 18rem;
+   padding: 8px;
+   width: 12rem;
    margin-right: 5px;
+   border: none;
 }
 #search-button {
-    padding: 5px;
-    width: 8rem;
+    padding: 8px;
+    width: 6rem;
+    background: rgb(130, 191, 252);
+    border: none;
+    font-weight: 700;
 }
 
 main {
@@ -39,7 +42,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    background-color: rgb(182, 220, 245);
+    background-color: white;
     margin: auto;
 }
 
