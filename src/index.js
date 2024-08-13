@@ -1,7 +1,17 @@
+function searchCity(city) {
+   let apiKey = "2a48ab03df66cfdeo2cf2td262aab2a0"
+   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`
+}
+
+
+
 
 function handleSearchSubmit(event) {
     event.preventDefault();
-    let searchInput =document.querySelector("#search-bar");
+    let searchInput = document.querySelector("#search-bar");
+    let cityElement = document.querySelector("#current-city");
+    cityElement.innerHTML = searchInput.value;
+    searchCity(searchInput.value);
 }
 
 let searchElement = document.querySelector("#search-form");
