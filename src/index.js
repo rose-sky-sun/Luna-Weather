@@ -25,3 +25,5 @@ function handleSearchSubmit(event) {
 
 let searchElement = document.querySelector("#search-form");
 searchElement.addEventListener("submit", handleSearchSubmit);
+
+searchCity("Oslo");
