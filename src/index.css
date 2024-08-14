@@ -80,7 +80,7 @@ main {
     bottom: 10px;
     left: 7px;
 }
-.temp-value {
+#temp-value {
     font-size: 55px;
     font-weight: 700;
 }
