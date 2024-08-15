@@ -70,9 +70,10 @@ main {
     font-size: 11px;
     position: relative;
     bottom: 1rem;
+    color: rgb(116, 120, 122);
 }
 .weather-span {
-    color: rgb(253, 21, 21);
+    color: rgb(44, 144, 245);
     font-weight: 700;
 }
 
@@ -98,6 +99,32 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 15px;
+}
+
+.forecast-day {
+    font-size: 16px;
+    color: rgb(103, 106, 107);
+    text-align: center;
+}
+
+.forecast-icon {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.forecast-temps {
+    font-size: 15px;
+    color: rgb(44, 144, 245);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.forecast-temp {
+    padding: 0 3px;
 }
 
 footer {
