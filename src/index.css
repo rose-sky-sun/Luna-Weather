@@ -74,13 +74,12 @@ main {
     font-weight: 700;
 }
 
-.temp-emoji {
-    font-size: 28px;
+#temp-icon {
+    width: 60px;
     position: relative;
-    bottom: 10px;
+    bottom: -10px;
     left: 7px;
 }
-
 
 #temp-value {
     font-size: 55px;
