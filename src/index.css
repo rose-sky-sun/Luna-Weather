@@ -93,6 +93,13 @@ main {
     bottom: 25px;
     font-weight: 600;
 }
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer {
     font-size: 11px;
     margin-top: 1.5rem;
