@@ -73,22 +73,26 @@ function displayForecast(response) {
 
     let forecastElement = document.querySelector("#forecast");
 
-    let days = ['Fri', 'Sat', 'Sun', 'Mon', 'Tue']; // dummy data before integrating API
+  
     let forecastHtml = "";
 
-    days.forEach(function(day) {
+    response.data.daily.forEach(function(day, index) {
+        if (index < 5) {
         forecastHtml =
             forecastHtml +
          `
             <div class="daily-forecast" >
-                <div class="forecast-day">${day}</div>
-                <div class="forecast-icon">🌤️</div>
+                <div class="forecast-day">Fri</div>
+                <div>
+                    <img src="${day.condition.icon_url}" class="forecast-icon"/> 
+                </div>
                 <div class="forecast-temps">
-                    <div class="forecast-temp"><strong>15°</strong></div>
-                    <div class="forecast-temp">9°</div>
+                    <div class="forecast-temp"><strong>${Math.round(day.temperature.maximum)}°</strong></div>
+                    <div class="forecast-temp">${Math.round(day.temperature.minimum)}°</div>
                 </div>
             </div>
         `;
+        }
     });
 
     forecastElement.innerHTML = forecastHtml;
