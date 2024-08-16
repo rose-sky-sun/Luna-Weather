@@ -17,6 +17,8 @@ function refreshWeather(response) {
     windElement.innerHTML = `${response.data.wind.speed}km/h`;
     iconElement.innerHTML = `<img id="temp-icon" src="${response.data.condition.icon_url}">`;
     temperatureElement.innerHTML = Math.round(temperature);
+
+    getForecast(response.data.city);
 }
 
 //added a funtion to format date
@@ -58,11 +60,20 @@ function handleSearchSubmit(event) {
     searchCity(searchInput.value);
 }
 
-//function to call for displaying the forecast
-function displayForecast() {
+//function for getting forecast data via API
+function getForecast (city) {
+    let apiKey = "2a48ab03df66cfdeo2cf2td262aab2a0"
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+    axios(apiUrl).then(displayForecast);
+}
+
+//function to call for injecting html to page
+function displayForecast(response) {
+    console.log(response.data);
+
     let forecastElement = document.querySelector("#forecast");
 
-    let days = ['Sat', 'Sun', 'Mon', 'Tue', 'Wed']; // dummy data before integrating API
+    let days = ['Fri', 'Sat', 'Sun', 'Mon', 'Tue']; // dummy data before integrating API
     let forecastHtml = "";
 
     days.forEach(function(day) {
@@ -87,7 +98,7 @@ let searchElement = document.querySelector("#search-form");
 searchElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Oslo");
-displayForecast();
+
 
 
 
