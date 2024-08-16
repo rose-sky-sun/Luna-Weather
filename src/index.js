@@ -60,6 +60,13 @@ function handleSearchSubmit(event) {
     searchCity(searchInput.value);
 }
 
+function formatDay(timestamp) {
+    let date = new Date(timestamp * 1000);
+    let days = ['Sun', 'Mon','Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+    return days[date.getDay()];
+}
+
 //function for getting forecast data via API
 function getForecast (city) {
     let apiKey = "2a48ab03df66cfdeo2cf2td262aab2a0"
@@ -82,7 +89,7 @@ function displayForecast(response) {
             forecastHtml +
          `
             <div class="daily-forecast" >
-                <div class="forecast-day">Fri</div>
+                <div class="forecast-day">${formatDay(day.time)}</div>
                 <div>
                     <img src="${day.condition.icon_url}" class="forecast-icon"/> 
                 </div>
